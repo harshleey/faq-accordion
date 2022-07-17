@@ -1,0 +1,146 @@
+/* 
+============
+Fonts
+============
+*/
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/* font-family: 'Kumbh Sans', sans-serif; */
+
+/* 
+============
+Fonts
+============
+*/
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+ font-size: 1rem;
+ background: hsl(273, 75%, 66%);
+}
+
+h1 {
+ text-align: center;
+ margin: 5px 0;
+}
+
+img {
+ width: 100%;
+ /* width: 50%; */
+}
+
+/* 
+============
+Main
+============
+*/
+.card-content {
+ background: #fff;
+ width: 95%;
+ max-width: 550px;
+ border-radius: 15px;
+ margin: 160px auto 16px auto;
+ padding: 48px 27px;
+ position: relative;
+ box-shadow: 2px 2px 4px 2px hsl(0, 0, 0, 0.3);
+}
+
+
+.card-content .woman-illustration {
+ margin-top: -420px;
+ margin-bottom: 60px;
+}
+
+
+
+.accordion-content {
+ border-bottom: 1px solid hsl(240, 5%, 91%);
+ overflow: hidden;
+}
+
+.accordion-content header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 1em 0;
+ cursor: pointer;
+ transition: all 0.3s linear;
+}
+
+.accordion-content .details {
+ height: 0;
+ line-height: 1.5;
+ transition: all 0.3s linear;
+}
+
+.accordion-content.open {
+ padding-bottom: 10px;
+}
+
+.woman-desktop,
+.bg-pattern-desktop {
+ display: none
+}
+
+
+
+@media all and (min-width: 850px) {
+  .woman-illustration,
+  .bg-pattern-mobile{
+  display: none;
+ }
+
+ .woman-desktop,
+ .bg-pattern-desktop {
+  display: block;
+ }
+
+ .woman-desktop {
+  margin-top: -350px;
+  width: 100%;
+  /* margin-bottom: 60px; */
+ }
+
+ .card-content {
+  max-width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px auto 16px auto;
+  padding: 48px 27px;
+  overflow: hidden;
+ }
+
+ .accordion-card {
+  width: 42%;
+ }
+
+ .illustration-images {
+  width: 57%;
+  margin-top: -75px;
+  margin-left: -100px;
+ }
+}
+
+@media all and (min-width: 1100px) {
+
+.woman-desktop {
+ margin-top: -450px;
+ width: 100%;
+}
+
+.accordion-card {
+ width: 42%;
+}
+
+.illustration-images {
+ width: 55%;
+ margin-top: -100px;
+ margin-left: -100px;
+}
+}
